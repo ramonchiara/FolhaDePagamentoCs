@@ -22,5 +22,10 @@ namespace FolhaDePagamentoCs
 
 			return base.GetSalario() + adicional;
 		}
+
+		public override string GetLinha2()
+		{
+			return string.Format("Faxineiro {0}", turno.ToLower());
+		}
 	}
 }

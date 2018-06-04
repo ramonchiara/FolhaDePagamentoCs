@@ -30,6 +30,11 @@ namespace FolhaDePagamentoCs
 				break;
 			}
 
+			Impressora impressora = new Impressora();
+			foreach (Funcionario f in funcionarios) {
+				impressora.Imprimir(f);
+			}
+
 			decimal total = 0;
 			foreach (Funcionario f in funcionarios) {
 				Console.WriteLine("{0,-10} {1,8:F2}", f.GetNome(), f.GetSalario());

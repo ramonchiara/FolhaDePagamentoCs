@@ -16,5 +16,10 @@ namespace FolhaDePagamentoCs
 		{
 			return base.GetSalario() + 0.1M * vendas;
 		}
+
+		public override string GetLinha2()
+		{
+			return "Vendedor";
+		}
 	}
 }

@@ -17,5 +17,10 @@ namespace FolhaDePagamentoCs
 		{
 			return base.GetSalario() + bonus;
 		}
+
+		public override string GetLinha2()
+		{
+			return "Gerente";
+		}
 	}
 }

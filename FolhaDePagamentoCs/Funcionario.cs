@@ -2,7 +2,7 @@
 
 namespace FolhaDePagamentoCs
 {
-	public abstract class Funcionario : IComparable<Funcionario>
+	public abstract class Funcionario : Cracha, IComparable<Funcionario>
 	{
 		private string nome;
 
@@ -17,6 +17,13 @@ namespace FolhaDePagamentoCs
 		}
 
 		public abstract decimal GetSalario();
+
+		public string GetLinha1()
+		{
+			return nome;
+		}
+
+		public abstract string GetLinha2();
 
 		public int CompareTo(Funcionario o)
 		{

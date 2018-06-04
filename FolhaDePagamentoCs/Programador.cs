@@ -9,5 +9,10 @@ namespace FolhaDePagamentoCs
 		{
 			
 		}
+
+		public override string GetLinha2()
+		{
+			return "Programador";
+		}
 	}
 }
